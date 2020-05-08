@@ -12,7 +12,7 @@ function createNewUser() {
         get age() {
             let age;
             let now = new Date();
-            let birthd = new Date((birthday.split(".")[2]), ((birthday.split(".")[1]) - 1), ((birthday.split(".")[0]) - 1));
+            let birthd = new Date((birthday.split(".")[2]), ((birthday.split(".")[1]) - 1), ((birthday.split(".")[0])));
             age = (Math.round((now.getTime() - birthd.getTime()) / (24 * 3600 * 1000 * 365.2425)));
 
             return age;
